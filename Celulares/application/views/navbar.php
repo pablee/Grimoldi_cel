@@ -25,6 +25,15 @@
        </li>
 
        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Datos <span class="caret"></span></a>
+         <ul class="dropdown-menu">
+          <li><a href="/celulares/internetmovil/listar"> Ver </a></li>
+          <li><a href="/celulares/internetmovil/nuevo"> Nuevo </a></li>
+          <li><a href="/celulares/internetmovil/editar"> Editar </a></li>
+         </ul>
+       </li>
+
+       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Lineas <span class="caret"></span></a>
          <ul class="dropdown-menu">
           <li><a href="/celulares/lineas/listar"> Ver </a></li>

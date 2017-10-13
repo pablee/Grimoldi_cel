@@ -8,35 +8,7 @@ class Plan
     {
         $db=new database();
         $db->conectar();
-/*
-        $consulta="SELECT RPD.id AS idPlanDatos,
-                          P.id AS idPlan, 
-                          P.nombre AS nombre, 
-                          P.adicional AS adicional,
-                          P.minutos AS minutos, 
-                          D.id AS idDatos, 
-                          D.gb AS gb				
-			       FROM Plan P
-			       JOIN rel_plan_datos RPD ON P.id = RPD.idPlan
-			       JOIN Datos D ON RPD.idDatos = D.id;";
 
-        $resultado=mysqli_query($db->conexion, $consulta)
-        or die ("No se pueden mostrar los planes.");
-
-        $planes = array(array("id", "nombre", "adicional", "minutos", "idDatos", "gb", "idPlanDatos"));
-        $i=0;
-        while($plan = mysqli_fetch_assoc($resultado))
-        {
-            $planes[$i]["id"]=$plan["idPlan"];
-            $planes[$i]["nombre"]=$plan["nombre"];
-            $planes[$i]["adicional"]=$plan["adicional"];
-            $planes[$i]["minutos"]=$plan["minutos"];
-            $planes[$i]["idDatos"]=$plan["idDatos"];
-            $planes[$i]["gb"]=$plan["gb"];
-            $planes[$i]["idPlanDatos"]=$plan["idPlanDatos"];
-            $i++;
-        }
-*/
         $consulta="SELECT *		
 			       FROM Plan;";
 
